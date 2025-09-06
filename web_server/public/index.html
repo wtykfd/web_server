@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightweight C++ Web Server</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to C++ Web Server</h1>
+            <p>A lightweight web server implemented in C++</p>
+        </header>
+        
+        <nav>
+            <a href="/">Home</a>
+            <a href="/logout" id="logout-btn" style="display:none;">Logout</a>
+            <a href="/login" id="login-btn">Login</a>
+        </nav>
+        
+        <main>
+            <section class="features">
+                <h2>Features</h2>
+                <ul>
+                    <li>HTTP/1.1 protocol support</li>
+                    <li>Static file serving</li>
+                    <li>Dynamic routing with parameters</li>
+                    <li>Session-based authentication</li>
+                    <li>Error handling</li>
+                    <li>Multi-threading</li>
+                </ul>
+            </section>
+            
+            <section class="demo">
+                <h2>Demo</h2>
+                <button id="public-btn">Public API</button>
+                <button id="protected-btn">Protected API (requires auth)</button>
+                <button id="user-btn">User Profile</button>
+                
+                <div id="result"></div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
